@@ -29,15 +29,12 @@ Wiązanie Pythona do OpenHPI.
 %setup -q -n py-openhpi-%{version}
 
 %build
-CFLAGS="%{rpmcflags}" \
-%{__python} setup.py build
+%py_build
 	
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
