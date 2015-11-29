@@ -13,7 +13,7 @@ BuildRequires:	openhpi-devel >= 2.10.0
 BuildRequires:	pkgconfig
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	swig-python >= 1.3.29
 %pyrequires_eq	python-libs
 Requires:	openhpi >= 2.10.0
